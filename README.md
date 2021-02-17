@@ -3,6 +3,7 @@
 ## Overview
 The Behavioural Design Patterns identify the common communication mechanisms between objects, behaviour of the objects on different stimulus and realize these in a standard way.
 
+![sybolic](behavioural.jpg)
 
 Different Behavioural Design Patterns are
 - Chain of responsibility
