@@ -11,8 +11,8 @@ The Behavioural Design Patterns identify the common communication mechanisms bet
 ![sybolic](./behavioural.jpg)
 
 Different Behavioural Design Patterns are
-- Chain of responsibility
-- Command
+- [Chain of responsibility](./ChainOfResponsibility)
+- [Command](./Command)
 - Interpreter
 - Iterator
 - Mediator
