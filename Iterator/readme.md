@@ -12,7 +12,7 @@ Provide a way to access the elements of an aggregate object sequentially without
 ## Code Example
 
 ## Example Output
-![output](_output.png)
+![output](output.png)
 
 ## Mapping the UML classes to Example code
 | **File/Class Name** | **Mapping Class in UML**  |
