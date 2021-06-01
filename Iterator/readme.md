@@ -17,8 +17,8 @@ Provide a way to access the elements of an aggregate object sequentially without
 ## Mapping the UML classes to Example code
 | **File/Class Name** | **Mapping Class in UML**  |
 | :-----: | :-: |
-|[Base.Enumerable/IEnumerableData.cs/Iterator Interface](./Base.Enumarable/IEnumerableData.cs)|*Iterator*|
-|[Base.Enumerable/IEnumerableData.cs/Aggregator Interface](./Base.Enumarable/IEnumerableData.cs)|*Aggregate*|
+|[Base.Enumerable/IEnumerableData.cs/Iterator Interface](./Base.Enumarable/IEnumarableData.cs)|*Iterator*|
+|[Base.Enumerable/IEnumerableData.cs/Aggregator Interface](./Base.Enumarable/IEnumarableData.cs)|*Aggregate*|
 |[Base.Enumerable/EmployeeList.cs/EmployeeList class](./Base.Enumarable/EmployeeList.cs)|*Concrete Aggregate*|
 |[Base.Enumerable/EmployeeList.cs/EmployeeIterator class](./Base.Enumarable/EmployeeList.cs)|*Concrete Iterator*|
 |[App.Main.Iterator/Program.cs/MainApp class](./App.Main.Iterator/Program.cs)|*Client*|
