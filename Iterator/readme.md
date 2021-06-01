@@ -10,6 +10,7 @@ Provide a way to access the elements of an aggregate object sequentially without
 ![plot](./iterator.png)
 
 ## Code Example
+Code shows how the list of employees can be iterated without affecting the data type (Employee).
 
 ## Example Output
 ![output](output.png)
