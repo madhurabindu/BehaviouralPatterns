@@ -14,7 +14,7 @@ Different Behavioural Design Patterns are
 - [Chain of responsibility](./ChainOfResponsibility)
 - [Command](./Command)
 - Interpreter(./Interpreter)
-- Iterator
+- [Iterator](./Iterator)
 - Mediator
 - Memento
 - Null Object
