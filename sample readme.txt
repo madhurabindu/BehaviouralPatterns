@@ -1,4 +1,4 @@
-# (Structural Pattern)
+# (Behavioural Pattern)
 
 ## Overview
 

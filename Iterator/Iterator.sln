@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Main.Iterator", "App.Main.Iterator\App.Main.Iterator.csproj", "{AC4B5DDD-E143-4961-89A3-530AC4891F01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base.Enumarable", "Base.Enumarable\Base.Enumarable.csproj", "{F23020C4-6373-45A9-B321-75F83A4C5280}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC4B5DDD-E143-4961-89A3-530AC4891F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC4B5DDD-E143-4961-89A3-530AC4891F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC4B5DDD-E143-4961-89A3-530AC4891F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC4B5DDD-E143-4961-89A3-530AC4891F01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F23020C4-6373-45A9-B321-75F83A4C5280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23020C4-6373-45A9-B321-75F83A4C5280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23020C4-6373-45A9-B321-75F83A4C5280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23020C4-6373-45A9-B321-75F83A4C5280}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B452A4A-C6BE-4F98-B6A4-4497B2390EB9}
+	EndGlobalSection
+EndGlobal
