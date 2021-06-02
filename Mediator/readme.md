@@ -17,7 +17,7 @@
 | :-----: | :-: |
 |[Library.MessageRouter/IMessageConsumer.cs](./Library.MessageRouter/IMessageConsumer.cs)|*Coleague Interface*|
 |[Library.MessageRouter/IMessageMediator.cs](./Library.MessageRouter/IMessageMediator.cs)|*Mediator Interface*|
-|[Library.MessageRouter/IMessageConsumer.cs](./Library.MessageRouter/MsgMediator.cs)|*Concrete Mediator*|
+|[Library.MessageRouter/MsgMediator.cs](./Library.MessageRouter/MsgMediator.cs)|*Concrete Mediator*|
 |[App.Main/AppWindow.cs](./App.Main/AppWindow.cs)|*Concrete Coleague1*|
 |[App.Main/MainApp.cs](./App.Main/MainApp.cs)|*Concrete Coleague2*|
 
