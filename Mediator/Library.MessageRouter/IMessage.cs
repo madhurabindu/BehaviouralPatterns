@@ -25,4 +25,9 @@ namespace Library.MessageRouter
         /// </summary>
         object[] Params { get; set; }
     }
+
+    public interface IMessageConsumer
+    {
+        void Consume(IMessage message);
+    }
 }
