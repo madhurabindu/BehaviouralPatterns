@@ -20,3 +20,4 @@
 ## Points to Remember
 
 ## Resources
+- https://www.baeldung.com/java-observer-pattern
