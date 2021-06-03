@@ -10,8 +10,7 @@ Mediator is a behavioral design pattern that lets you reduce chaotic dependencie
 ![plot](./uml.png)
 
 ## Code Example
-In the example a single MsgMediator class mediates between messages generated on different applications. These are shown as simple messages, however these could be messages indicatng the system events for example which could be generated due to a scenario in one of the apps and is consumed by different parts of the application. 
-Without a mediator this would result in all the applications talking to one another to send these messages to one another.
+In the example a single MsgMediator class mediates between the handlers of different message types in the system. The main app as sample generates different types of message. The MSGMediator routes the message to the registered consumer of the type of message. Please note for simplicity the message is generated in one place, the messages could be generated in different parts of the system, in the absence of a mediator this would result in all the applications talking to one another to send / receive messages.
 
 ## Example Output
 ![output](output.png)
