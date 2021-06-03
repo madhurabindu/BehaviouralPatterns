@@ -15,10 +15,10 @@ Different Behavioural Design Patterns are
 - [Command](./Command)
 - Interpreter
 - [Iterator](./Iterator)
-- Mediator
+- [Mediator](./Mediator)
 - Memento
 - Null Object
-- Observer
+- [Observer](./Observer)
 - State
 - Strategy
 - Template method
