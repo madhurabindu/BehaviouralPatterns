@@ -23,8 +23,10 @@ Note that if the Mediator class only routed the events to its consumers then thi
 |[Library.MessageRouter/IMessageConsumer.cs](./Library.MessageRouter/IMessageConsumer.cs)|*Coleague Interface*|
 |[Library.MessageRouter/IMessageMediator.cs](./Library.MessageRouter/IMessageMediator.cs)|*Mediator Interface*|
 |[Library.MessageRouter/MsgMediator.cs](./Library.MessageRouter/MsgMediator.cs)|*Concrete Mediator*|
-|[App.Main/AppWindow.cs](./App.Main/AppWindow.cs)|*Concrete Coleague1*|
-|[App.Main/MainApp.cs](./App.Main/MainApp.cs)|*Concrete Coleague2*|
+|[AppWindow Instance 1](./App.Main/AppWindow.cs)|*Concrete Coleague1*|
+|[AppWindow Instance 2](./App.Main/AppWindow.cs)|*Concrete Coleague2*|
+|[AppWindow Instance 3](./App.Main/AppWindow.cs)|*Concrete Coleague3*|
+|[AppWindow Instance 4](./App.Main/AppWindow.cs)|*Concrete Coleague4*|
 
 ## Points to Remember
 [This article](https://sourcemaking.com/design_patterns/mediator) has a good picture to depict the pattern in a very simple manner
@@ -34,7 +36,7 @@ Note that if the Mediator class only routed the events to its consumers then thi
 - On the other hand, Mediator can leverage Observer for dynamically registering colleagues and communicating with them. (As done in the example here). [Refer here for more inout](https://softwareengineering.stackexchange.com/questions/134432/mediator-vs-observer)
 
 - Mediator is similar to Facade in that it abstracts functionality of existing classes. Mediator abstracts/centralizes arbitrary communication between colleague objects, it routinely "adds value", and it is known/referenced by the colleague objects (i.e. it defines a multidirectional protocol). In contrast, Facade defines a simpler interface to a subsystem, it doesn't add new functionality, and it is not known by the subsystem classes (i.e. it defines a unidirectional protocol where it makes requests of the subsystem classes but not vice versa).
-A Facade is a structural pattern which all encopasses multiple functionality into one. It does not add its own logic in doing so. It does not change the 'behaviour' of the system in doing so. Where as a Mediator class encompasses multiple objects that wishes to communicate with one another by adding additional logic required to handle the objects behaviours. [Refer her](https://stackoverflow.com/questions/481984/fa%c3%a7ade-vs-mediator)
+A Facade is a structural pattern which all encopasses multiple functionality into one. It does not add its own logic in doing so. It does not change the 'behaviour' of the system in doing so. Where as a Mediator class encompasses multiple objects that wishes to communicate with one another by adding additional logic required to handle the objects behaviours. [Refer here](https://stackoverflow.com/questions/481984/fa%c3%a7ade-vs-mediator)
 
 ## Resources
 - https://www.dofactory.com/net/mediator-design-pattern
