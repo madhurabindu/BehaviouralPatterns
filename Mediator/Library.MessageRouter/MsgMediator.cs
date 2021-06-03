@@ -6,10 +6,11 @@ namespace Library.MessageRouter
     /// <summary>
     /// Public event router class
     /// </summary>
-    public class MsgMediator :IMessageMediator
+    public class MsgMediator : IMessageMediator
     {
-        private IList<IMessageConsumer> consumerList;
- 
+        private Dictionary<MType, IMessageConsumer> consumerList;
+
+        private IMessageConsumer criticalConsumer;
         /// <summary>
         /// Static instance creation
         /// </summary>
@@ -26,12 +27,12 @@ namespace Library.MessageRouter
         /// </summary>
         private MsgMediator()
         {
-            consumerList = new List<IMessageConsumer>();
+            consumerList = new Dictionary<MType, IMessageConsumer>();
         }
 
-        public void RegisterConsumer(IMessageConsumer consumer)
+        public void RegisterConsumer(IMessageConsumer consumer, MType type)
         {
-            consumerList.Add(consumer);
+            consumerList[type] = consumer;
         }
 
         /// <summary>
@@ -42,10 +43,7 @@ namespace Library.MessageRouter
         public void SendMessage(string message, MType type, params object[] list)
         {
             MessageImpl m = new MessageImpl(type, message);
-            foreach (var item in consumerList)
-            {
-                item.Consume(m);
-            }
+            consumerList[type]?.Consume(m);
         }
 
        

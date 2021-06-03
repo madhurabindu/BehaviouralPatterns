@@ -8,7 +8,7 @@ namespace Library.MessageRouter
 {
     public interface IMessageMediator
     {
-        void RegisterConsumer(IMessageConsumer consumer);
+        void RegisterConsumer(IMessageConsumer consumer, MType type);
 
         void SendMessage(string message, MType type, params object[] list);
     }

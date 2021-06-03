@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IMessage.cs" />
+    <Compile Include="IMessageConsumer.cs" />
     <Compile Include="IMessageMediator.cs" />
     <Compile Include="MessageImpl.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

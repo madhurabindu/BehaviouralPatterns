@@ -17,8 +17,8 @@ namespace App.Main
         public AppWindow(MType type)
         {
             InitializeComponent();
-            MsgMediator.Instance.RegisterConsumer(this);
             mType = type;
+            MsgMediator.Instance.RegisterConsumer(this, type);
         }
 
         public void Consume(IMessage message)
@@ -27,9 +27,6 @@ namespace App.Main
                 message.MessageType, message.Message);
         }
 
-        private void sendBtn_Click(object sender, EventArgs e)
-        {
-            MsgMediator.Instance.SendMessage(textBox1.Text, mType);
-        }
+       
     }
 }

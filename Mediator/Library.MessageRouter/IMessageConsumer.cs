@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Library.MessageRouter
 {
-    interface IMessageConsumer
+    public interface IMessageConsumer
     {
+        void Consume(IMessage message);
     }
 }

@@ -26,8 +26,5 @@ namespace Library.MessageRouter
         object[] Params { get; set; }
     }
 
-    public interface IMessageConsumer
-    {
-        void Consume(IMessage message);
-    }
+    
 }
