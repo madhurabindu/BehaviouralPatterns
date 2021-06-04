@@ -20,7 +20,7 @@ The Subject broadcasts events to all registered Observers without any additional
 ## Mapping the UML classes to Example code
 | **File/Class Name** | **Mapping Class in UML**  |
 | :-----: | :-: |
-|[Base.Enumerable/IEnumerableData.cs/Iterator Interface](./Base.Enumarable/IEnumarableData.cs)|*Iterator*|
+|[Base.Interface/IBroadcastChannel.cs](./Base.Interface/IBroadcastChannel.cs)|*Observer Interface*|
 
 ## Points to Remember
 - The "View" part of Model-View-Controller is an observer, Model being the subject. The controller based on its functionalty could encapsulate a Modeator pattern using a observer pattern.
