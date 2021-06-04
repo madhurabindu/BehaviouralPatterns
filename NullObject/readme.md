@@ -1,6 +1,8 @@
 # (Behavioural Pattern)
 
 ## Overview
+In cases where we crate a 'kind' of object baed on a condition or crate from a factory, there is always possibility of no object being created and thus the factory retuning a null. This means, you have many checks for null throughout the code.
+Instead of checking for the null object everywhere, we can define null behavior or call do-nothing behavior.
 
 ## Intent
 
