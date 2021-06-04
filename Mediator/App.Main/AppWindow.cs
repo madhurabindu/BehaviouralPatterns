@@ -18,7 +18,6 @@ namespace App.Main
         {
             InitializeComponent();
             mType = type;
-            MsgMediator.Instance.RegisterConsumer(this, type);
         }
 
         public void Consume(IMessage message)

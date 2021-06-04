@@ -11,6 +11,8 @@ namespace Library.MessageRouter
         private Dictionary<MType, IMessageConsumer> consumerList;
 
         private IMessageConsumer criticalConsumer;
+
+        private CriticalMessageHandler criticalMessageHandler;
         /// <summary>
         /// Static instance creation
         /// </summary>
@@ -28,6 +30,7 @@ namespace Library.MessageRouter
         private MsgMediator()
         {
             consumerList = new Dictionary<MType, IMessageConsumer>();
+            criticalMessageHandler = new CriticalMessageHandler();
         }
 
         public void RegisterConsumer(IMessageConsumer consumer, MType type)
@@ -44,6 +47,13 @@ namespace Library.MessageRouter
         {
             MessageImpl m = new MessageImpl(type, message);
             consumerList[type]?.Consume(m);
+
+            if(type == MType.Critical)
+            {
+                criticalConsumer?.Consume(m);
+                Console.WriteLine("Critical Error....\nRaising alarm.... \nCallingHandler....");
+                criticalMessageHandler.HandleCriticalState();
+            }
         }
 
        

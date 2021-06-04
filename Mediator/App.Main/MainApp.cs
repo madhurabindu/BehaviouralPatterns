@@ -16,12 +16,20 @@ namespace App.Main
 
             app1 = new AppWindow(MType.Info);
             app1.Text = "App Window Info Message Handler";
+            MsgMediator.Instance.RegisterConsumer(app1, MType.Info);
+
             app2 = new AppWindow(MType.Error);
             app2.Text = "App Window Error Message Handler";
+            MsgMediator.Instance.RegisterConsumer(app2, MType.Error);
+
             app3 = new AppWindow(MType.Warning);
             app3.Text = "App Window Warning Message Handler";
+            MsgMediator.Instance.RegisterConsumer(app3, MType.Warning);
+
             app4 = new AppWindow(MType.Critical);
             app4.Text = "App Window Critical Message Handler";
+            MsgMediator.Instance.RegisterConsumer(app4, MType.Critical);
+
             listBox1.SelectedIndex = 0;
         }
 

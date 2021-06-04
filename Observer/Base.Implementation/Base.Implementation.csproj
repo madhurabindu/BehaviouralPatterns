@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{506B1E62-7406-4712-9625-24FA292545C1}</ProjectGuid>
+    <ProjectGuid>{519C7FB7-CE25-4623-B9E7-4A4E86476E9E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Library.MessageRouter</RootNamespace>
-    <AssemblyName>Library.MessageRouter</AssemblyName>
+    <RootNamespace>Base.Implementation</RootNamespace>
+    <AssemblyName>Base.Implementation</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,8 +33,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,30 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CriticalMessageHandler.cs" />
-    <Compile Include="IMessage.cs" />
-    <Compile Include="IMessageConsumer.cs" />
-    <Compile Include="IMessageMediator.cs" />
-    <Compile Include="MessageImpl.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="MsgMediator.cs" />
+    <Compile Include="MusicNowChannel.cs" />
+    <Compile Include="NewsAgency.cs" />
+    <Compile Include="NewsChannel1.cs" />
+    <Compile Include="NewsChannel2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SportsChannel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bell_32.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bell_64.gif" />
+    <ProjectReference Include="..\Base.Interface\Base.Interface.csproj">
+      <Project>{00506078-5ed5-4509-9bc0-a9b6171d3825}</Project>
+      <Name>Base.Interface</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
