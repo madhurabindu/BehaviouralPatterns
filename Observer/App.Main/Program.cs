@@ -55,7 +55,7 @@ namespace App.Main
             Console.WriteLine("\n-------------------------------------------------------------------\n");
             agency.Report(new News()
             {
-                Message = "All Nations sign the Paric Environment treaty",
+                Message = "All Nations sign the Paris Environment treaty",
                 NewsType = News.NType.Politics,
                 Reporter = "Reporter1"
             });
