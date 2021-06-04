@@ -14,7 +14,7 @@ Different Behavioural Design Patterns are
 - Interpreter
 - [Iterator](./Iterator)
 - [Mediator](./Mediator)
-- Memento
+- [Memento](./Memento)
 - [Null Object](./NullObject)
 - [Observer](./Observer)
 - State
