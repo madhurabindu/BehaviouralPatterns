@@ -19,4 +19,6 @@
 
 ## Points to Remember
 
+It is important to note that unless developers are aware that the null object implementation exists, they may still do null checks.
+
 ## Resources
