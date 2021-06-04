@@ -8,8 +8,6 @@ The object's state and its behaviour.
 
 The Behavioural Design Patterns identify the common communication mechanisms between objects behaviour of the objects on different conditions and realize these in a standard way.
 
-![sybolic](./behavioural.jpg)
-
 Different Behavioural Design Patterns are
 - [Chain of responsibility](./ChainOfResponsibility)
 - [Command](./Command)
