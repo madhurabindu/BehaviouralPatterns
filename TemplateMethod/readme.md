@@ -32,3 +32,5 @@ Template Method is a behavioral design pattern that defines the skeleton of an a
 - Factory Method is a specialization of Template Method.
 
 ## Resources
+- https://sourcemaking.com/design_patterns/template_method
+- https://refactoring.guru/design-patterns/template-method
