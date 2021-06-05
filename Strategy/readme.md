@@ -12,6 +12,7 @@ Strategy is a behavioral design pattern that lets you define a family of algorit
 ![plot](./uml.png)
 
 ## Code Example
+The code shows different filters being applied on the image. The different filter algorithms are implemented using strategy pattern.
 
 ## Example Output
 ![output](output.png)
