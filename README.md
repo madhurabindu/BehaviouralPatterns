@@ -18,7 +18,7 @@ Different Behavioural Design Patterns are
 - [Null Object](./NullObject)
 - [Observer](./Observer)
 - State
-- Strategy
+- [Strategy](./Strategy)
 - Template method
 - Visitor
 
