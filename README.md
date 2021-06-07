@@ -19,7 +19,7 @@ Different Behavioural Design Patterns are
 - [Observer](./Observer)
 - State
 - [Strategy](./Strategy)
-- Template method
+- [Template method](./TemplateMethod)
 - Visitor
 
 ## Resources
