@@ -10,7 +10,7 @@ The main idea is that, at any given moment, there’s a finite number of states 
 ![plot](./uml.png)
 
 ## Code Example
-The example takes a document assuming it can be in one of the following states - Draft, InReview, PendingApproval, Published
+The example takes an order and shows the order moving different states like InCart, Ordered, Shipped, OutForDelivery, Delivered, Cancelled etc.
 
 
 ## Example Output
