@@ -1,6 +1,6 @@
 ﻿namespace App.Main
 {
-    partial class Form1
+    partial class MainApp
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainApp));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.pBoxOut = new System.Windows.Forms.PictureBox();
             this.pBoxIn = new System.Windows.Forms.PictureBox();

@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace App.Main
 {
-    public partial class Form1 : Form
+    public partial class MainApp : Form
     {
         private FilterHandler handler;
 
-        public Form1()
+        public MainApp()
         {
             InitializeComponent();
             handler = new FilterHandler();
