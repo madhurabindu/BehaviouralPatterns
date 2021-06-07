@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Base.StateMachine;
+using System;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace App.Main
@@ -6,46 +8,55 @@ namespace App.Main
     public partial class Form1 : Form
     {
         public enum OrderState { None, InCart, Ordered, Shipped, OutForDelivery, Delivered, Cancelled, ReturnRequested, Returned}
-        private OrderState state ;
 
+        Order order;
         public Form1()
         {
             InitializeComponent();
             UpdateButtonState();
+            order = new Order(1431);
+            order.State = null;
         }
         private void btnAddToCart_Click(object sender, EventArgs e)
         {
-            state = OrderState.InCart;
+            order.State = new InCartState();
             UpdateButtonState();
         }
 
         private void btnBuyNow_Click(object sender, EventArgs e)
         {
-            state = OrderState.Ordered;
+            order.MoveNext();
             UpdateButtonState();
         }
 
         private void btnCancelOrder_Click(object sender, EventArgs e)
         {
-            state = OrderState.Cancelled;
+            order.Cancel();
             UpdateButtonState();
         }
 
         private void btnTrack_Click(object sender, EventArgs e)
         {
             // Mimic order moving from one state to other here....
+            bool cont = true;
+            do
+            {
+                Thread.Sleep(500);
+                order.MoveNext();
+                cont = Console.ReadLine().CompareTo("q") != 0;
+            }
+            while (cont);
         }
 
        
         private void btnRequestReturn_Click(object sender, EventArgs e)
         {
-            state = OrderState.ReturnRequested;
             UpdateButtonState();
         }
 
         private void UpdateButtonState()
         {
-            switch (state)
+  /*          switch (state)
             {
                 case OrderState.InCart:
                     {
@@ -112,6 +123,7 @@ namespace App.Main
                         break;
                     }
             }
+  */
 
         }
 

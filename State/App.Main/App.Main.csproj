@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CF6B789B-3DCC-4DAD-A011-1D351F98CDD1}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>App.Main</RootNamespace>
     <AssemblyName>App.Main</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -31,6 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -82,6 +85,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base.StateMachine\Base.StateMachine.csproj">
+      <Project>{886C602B-89E3-4F23-B430-F0B0451BA0AC}</Project>
+      <Name>Base.StateMachine</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
