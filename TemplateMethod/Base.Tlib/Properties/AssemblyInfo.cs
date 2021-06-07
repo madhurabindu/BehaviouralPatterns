@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Memento")]
+[assembly: AssemblyTitle("Base.Tlib")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Memento")]
+[assembly: AssemblyProduct("Base.Tlib")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8c257315-7a60-4b07-b65d-bd6ea1c2952e")]
+[assembly: Guid("e6d98dd1-e9a5-40f1-a766-2c47dedbb473")]
 
 // Version information for an assembly consists of the following four values:
 //
